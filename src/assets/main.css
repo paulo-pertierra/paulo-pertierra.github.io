@@ -1,0 +1,67 @@
+/** Style Guide 
+ * text: '#f3f7fc';
+ * background: '#060e19';
+ * primary: '#2d70c8';
+ * secondary: '#081525';
+ * accent: '#2e72cc'; 
+ **/
+@tailwind base;
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #060e19;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 100vh;
+    border: 3px solid #546e7a;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #546e7a;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #060e19;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  .tooltip .tooltiptext::after {
+    content: ' ';
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #060e19 transparent transparent transparent;
+  }
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+}
+@tailwind components;
+@tailwind utilities;
