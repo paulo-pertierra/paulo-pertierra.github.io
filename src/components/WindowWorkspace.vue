@@ -34,10 +34,11 @@ library.add(
 import { useWindowStore } from '@/stores/window'
 const windowStore = useWindowStore()
 
-import WorkspaceTile from './WindowWorkspaceTile.vue'
-
 import { ref } from 'vue'
 import type { Ref } from 'vue'
+import WindowWorkspaceFullstack from './WindowWorkspaceFullstack.vue'
+import WindowWorkspaceFrontend from './WindowWorkspaceFrontend.vue';
+import WindowWorkspaceBackend from './WindowWorkspaceBackend.vue';
 
 type Stack = 'full' | 'front' | 'back' | 'dev'
 
@@ -141,97 +142,9 @@ function setStack(newStack: Stack) {
                 </button>
               </div>
             </div>
-            <div
-              class="scrollbar grid h-min max-h-full w-full grid-cols-1 gap-2 overflow-auto p-2 lg:grid-cols-3"
-              v-if="stack === 'full'"
-            >
-              <workspace-tile
-                icon-file-name="vue"
-                href="https://vuejs.org/"
-                :shift-left="2"
-                :text-space="1"
-                >Vue.js</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="tailwind"
-                href="https://tailwindcss.com/"
-                :shift-left="1"
-                :text-space="1"
-                >Tailwind CSS</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="figma"
-                href="https://www.figma.com/"
-                :shift-left="3"
-                :text-space="1"
-                >Figma</workspace-tile
-              >
-              <workspace-tile icon-file-name="html" :shift-left="3" :text-space="1"
-                >HTML</workspace-tile
-              >
-              <workspace-tile icon-file-name="css" :shift-left="2" :text-space="1"
-                >CSS</workspace-tile
-              >
-              <workspace-tile icon-file-name="javascript" :shift-left="0" :text-space="2"
-                >JavaScript</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="node"
-                href="https://nodejs.org"
-                :shift-left="0"
-                :text-space="2"
-                >Node.js</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="docker"
-                href="https://docker.com"
-                :shift-left="2"
-                :text-space="2"
-                >Docker</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="codeigniter"
-                href="https://www.codeigniter.com"
-                :shift-left="2"
-                :text-space="2"
-                >CodeIgniter</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="php"
-                href="https://www.php.net"
-                :shift-left="2"
-                :text-space="2"
-                >PHP</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="strapi"
-                href="https://strapi.io"
-                :shift-left="2"
-                :text-space="2"
-                >Strapi</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="postgresql"
-                href="https://strapi.io"
-                :shift-left="2"
-                :text-space="2"
-                >PostgreSQL</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name=""
-                href="https://expressjs.com"
-                :shift-left="0"
-                :text-space="0"
-                >Express.js</workspace-tile
-              >
-              <workspace-tile
-                icon-file-name="python"
-                href="https://www.python.org"
-                :shift-left="2"
-                :text-space="2"
-                >Python</workspace-tile
-              >
-            </div>
+            <WindowWorkspaceFullstack v-if="stack === 'full'" :stack="stack" />
+            <WindowWorkspaceFrontend v-else-if="stack === 'front'" :stack="stack" />
+            <WindowWorkspaceBackend v-else-if="stack === 'back'" :stack="stack" />
           </div>
         </div>
       </div>
