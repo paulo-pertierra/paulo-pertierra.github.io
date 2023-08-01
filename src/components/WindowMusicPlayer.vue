@@ -23,7 +23,7 @@ library.add(
   faListUl
 )
 
-import SliderInput from '@/components/Windows/MusicPlayer/SliderInput/SliderInput.vue'
+import WindowMusicPlayerSlider from './WindowMusicPlayerSlider.vue'
 
 import { useWindowStore } from '@/stores/window'
 const windowStore = useWindowStore()
@@ -115,7 +115,7 @@ const music = fns.differenceInYears(new Date(), new Date('2001-11-03'))
                 </div>
               </div>
               <div class="mx-auto w-60">
-                <SliderInput />
+                <window-music-player-slider />
               </div>
               <div class="mx-auto my-4 flex h-16 w-64 items-center justify-between px-2 text-text">
                 <div class="flex">

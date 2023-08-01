@@ -82,7 +82,6 @@ const skills = [
     exp: '<1 year',
     confidence: 1
   }
-
 ]
 </script>
 
@@ -100,10 +99,10 @@ const skills = [
         src="https://komarev.com/ghpvc/?username=paulo-pertierra&style=flat-square&color=blue"
         alt=""
       />
-      <h4 class="my-2">Hello! Welcome to my Portfolio.</h4>
+      <h4 class="my-2">Hello! Welcome to my readme!</h4>
       <h4>
         You can view my GitHub projects
-        <a href="https://github.com/paulo-pertierra?tab=repositories">here</a>!
+        <a href="https://github.com/paulo-pertierra?tab=repositories">here</a>.
       </h4>
       <h4>
         <font-awesome-icon class="animate-bounce" icon="fa-solid fa-circle-down" /> Scroll down for
@@ -168,21 +167,7 @@ const skills = [
         src="https://media.giphy.com/media/l41JU9pUyosHzWyuQ/giphy.gif"
         alt=""
       />
-      <h4 class="text-center">
-        Curious on the tech-stacks I've worked on or projects I helped with?
-      </h4>
-      <div class="mx-auto w-fit">
-        <button
-          class="m-2 inline-block w-36 bg-gray-600 p-4 text-xl transition-colors ease-in-out hover:bg-gray-800"
-        >
-          Techs
-        </button>
-        <button
-          class="m-2 inline-block w-36 bg-gray-600 p-4 text-xl transition-colors ease-in-out hover:bg-gray-800"
-        >
-          Projects
-        </button>
-      </div>
+      <h4 class="text-center">I use Arch btw.</h4>
     </div>
   </div>
 </template>

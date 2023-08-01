@@ -5,12 +5,14 @@ import { usePreferenceStore } from './preferences'
 
 export const useWindowStore = defineStore('windows', () => {
   const preferenceStore = usePreferenceStore()
+
   const activeWindow: Ref<Window> = ref(
-    preferenceStore.isAutoHideStartPage ? 'music-player' : 'start-page'
+    preferenceStore.isAutoHideStartPage ? preferenceStore.lastOpenedWindow : 'start-page'
   )
 
   function setActiveWindow(changeWindow: Window) {
     activeWindow.value = activeWindow.value === changeWindow ? 'none' : changeWindow
+    preferenceStore.lastOpenedWindow = activeWindow.value
   }
   return { activeWindow, setActiveWindow }
 })

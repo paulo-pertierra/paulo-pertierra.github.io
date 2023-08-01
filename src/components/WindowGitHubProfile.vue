@@ -22,7 +22,7 @@ onMounted(() => {
 import { toRef } from 'vue'
 const user = toRef(githubProfileStore, 'user')
 
-import ReadMeVue from './ReadMe.vue'
+import WindowGithubProfileReadme from './WindowGitHubProfileReadme.vue'
 </script>
 
 <template>
@@ -82,7 +82,7 @@ import ReadMeVue from './ReadMe.vue'
             <div
               class="col-span-3 hidden h-full overflow-hidden rounded-lg border lg:col-span-2 lg:block"
             >
-              <ReadMeVue />
+              <window-github-profile-readme />
             </div>
           </div>
         </div>

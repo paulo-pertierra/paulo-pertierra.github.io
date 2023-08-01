@@ -1,18 +1,20 @@
 <script setup lang="ts">
 import DesktopFileIcons from '@/components/DesktopFileIcons.vue'
 
-import MusicPlayer from '@/components/Windows/MusicPlayer/MusicPlayer.vue'
-import GitHubProfile from '@/components/Windows/GitHubProfile/GitHubProfile.vue'
-import StartPage from '@/components/Windows/StartPage/StartPage.vue'
+import WindowMusicPlayer from '@/components/WindowMusicPlayer.vue'
+import WindowGithubProfile from '@/components/WindowGitHubProfile.vue'
+import WindowStartPage from '@/components/WindowStartPage.vue'
+import WindowWorkspace from '@/components/WindowWorkspace.vue'
 
 import TaskBar from '@/components/TaskBar.vue'
 </script>
 
 <template>
   <!-- Active Windows Zone -->
-  <MusicPlayer />
-  <GitHubProfile />
-  <StartPage />
+  <window-music-player />
+  <window-github-profile />
+  <window-start-page />
+  <window-workspace />
   <!-- Desktop App Icons Zone -->
   <desktop-file-icons />
 

@@ -80,12 +80,10 @@ const preferenceStore = usePreferenceStore()
                 <h1 class="font-bold">Do you design pages like these?</h1>
                 <p>
                   No, I have a pretty good background in user interface (UI) and user experience
-                  (UX) design. A website facing the public or customers
-                  should always feel familiar and fast after all.
+                  (UX) design. A website facing the public or customers should always feel familiar
+                  and fast after all.
                 </p>
-                <p>
-                  ...but of course, I will do anything you want me to do! &#58;&#41;
-                </p>
+                <p>...but of course, I will do anything you want me to do! &#58;&#41;</p>
               </div>
               <div class="my-3">
                 <h1 class="font-bold">But why did you design it like this?</h1>
@@ -137,9 +135,14 @@ const preferenceStore = usePreferenceStore()
                     always been used in so many things.
                   </p>
                   <p class="mb-4">
-                    Oh, and yep, the windows are draggable, so fidget however you like! <font-awesome-icon icon="fa-solid fa-thumbs-up" />
+                    Oh, and yep, the windows are draggable, so fidget however you like!
+                    <font-awesome-icon icon="fa-solid fa-thumbs-up" />
                   </p>
-                  <img class="mx-auto" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGNnZnJkOWNkaGpqeWlnZXV5c2EzaDIybWZpZnI3NTNncjV4ejVhZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GbcGu0dLiqO1QIL4Jn/giphy.gif" alt="">
+                  <img
+                    class="mx-auto"
+                    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGNnZnJkOWNkaGpqeWlnZXV5c2EzaDIybWZpZnI3NTNncjV4ejVhZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GbcGu0dLiqO1QIL4Jn/giphy.gif"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
