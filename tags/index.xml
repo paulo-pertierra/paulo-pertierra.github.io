@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on paulopert.dev</title>
+    <link>https://paulopert.dev/tags/</link>
+    <description>Recent content in Tags on paulopert.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Paulo Pertierra</copyright>
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://paulopert.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Devops</title>
+      <link>https://paulopert.dev/tags/devops/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://paulopert.dev/tags/devops/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Racing</title>
+      <link>https://paulopert.dev/tags/racing/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://paulopert.dev/tags/racing/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
